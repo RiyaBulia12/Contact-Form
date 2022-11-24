@@ -112,6 +112,7 @@ main {
 
 .social-icon {
   height: 20px;
+  filter: invert(38%) sepia(14%) saturate(802%) hue-rotate(179deg) brightness(92%) contrast(96%);
 }
 
 .about-me-section {
@@ -324,4 +325,113 @@ li {
 
 .skills {
   list-style: inside url("../media/svg/circle.svg");
+}
+
+/* Contact Form */
+.form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 0 0;
+}
+
+.cols {
+  display: flex;
+  flex-direction: column;
+}
+
+.cols > p {
+  font-family: 'Inter', sans-serif;
+  line-height: 2.75rem;
+  text-align: center;
+  color: #172b4d;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 4.375rem;
+  padding: 1.5rem;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 0 1.5rem;
+  align-self: center;
+}
+
+input {
+  border: 0;
+  border-bottom: 1px solid #dbd8d7;
+  padding: 5%;
+  margin-bottom: 1.25rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+textarea {
+  height: 7.125rem;
+  margin-bottom: 1.5rem;
+  border: 0;
+  padding: 0.75rem;
+  background: #fbf8f7;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0;
+  text-align: left;
+  resize: vertical;
+}
+
+.form-button {
+  background-color: #7b5f4b;
+  color: #fff;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.0625rem;
+  line-height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  border: 0;
+  margin-left: 0;
+  width: 9.375rem;
+  align-self: center;
+}
+
+.form-button:hover {
+  background-color: #fff;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+.hr {
+  width: 100%;
+  border: 0.5px solid #dfe1e6;
+  margin-top: 4.75rem;
+}
+
+.social-section {
+  padding: 1.875rem 0;
+}
+
+/* Commented code ends here */
+@media screen and (min-width: 462px) {
+  .cols {
+    flex-direction: row;
+    margin: 0 135px;
+  }
+
+  .cols > p {
+    width: 64%;
+    text-align: left;
+  }
 }
